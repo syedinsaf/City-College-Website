@@ -1,0 +1,31 @@
+@tailwind base;
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+#navlinks {
+  animation: translate 0.4s;
+}
+
+body {
+  height: 100vh;
+}
+
+.scrollbar-thumb {
+  background-color: rgb(5, 109, 5) !important;
+  width: 6px !important;
+}
+
+.scrollbar-track-y {
+  width: 6px !important;
+  background-color: transparent !important;
+}
+
+@keyframes translate {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
